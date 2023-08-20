@@ -8,6 +8,29 @@ public class Money
 {
 
 }
+public void buyTruck()
+{
+    total += 100000;
+    truckAmount += 1;
+}
+public void rentTruck()
+{
+    total += 15000;
+    truckAmount += 1;
+    rentedTrucks += 1;
+}
+public void maintainance()
+{
+    total += 1000;
+}
+public void fuel()
+{
+    total += 5;
+}
+public void wages()
+{
+    total += 30;
+}
 public void buyTruck(int count)
 {
     total += 100000*count;
@@ -38,7 +61,7 @@ public void wages(int hours)
         total += 240+((hours-8)*45);
     }
 }
-public void newDay
+public void newDay()
 {
     truckAmount-=rentedTrucks;
     rentedTrucks=0;
